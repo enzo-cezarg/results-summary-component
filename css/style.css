@@ -1,0 +1,104 @@
+/* font-family: 'Hanken Grotesk', sans-serif;
+
+## Colors
+
+### Primary
+
+- Light red: rgb(255, 87, 87)
+- Orangey yellow: rgb(255, 176, 31)
+- Green teal: rgb(0, 189, 145)
+- Cobalt blue: rgb(17, 37, 212)
+
+## Gradients
+
+- Light slate blue (background): rgb(120, 87, 255)
+- Light royal blue (background): rgb(46, 43, 233)
+
+- Violet blue (circle): rgba(78, 33, 202, 1)
+- Persian blue (circle): rgba(36, 33, 202, 0)
+
+
+
+### Neutral
+
+- White: rgb(255, 255, 255)
+- Pale blue: rgb(235, 241, 255)
+- Light lavender: rgb(200, 199, 255)
+- Dark gray blue: rgb(48, 59, 90)
+
+*/
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    width: 725px;
+    height: 475px;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 25px 25px 50px rgba(17, 37, 212, 0.1);
+}
+
+.left-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-image: linear-gradient(rgb(120, 87, 255), rgb(46, 43, 233));
+    border-radius: 25px;
+}
+
+.right-box {
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+.text-container {
+    width: 100%;
+    height: 30px;
+    margin-top: 50px;
+    color: rgb(200, 199, 255);
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-align: center;
+}
+
+.result-title {
+    position: relative;
+    top: -25px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.circle-container {
+    position: relative;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+}
+
+.result-circle {
+    background-image: linear-gradient(170deg,rgba(78, 33, 202, 1), rgba(36, 33, 202, 0));
+    position: relative;
+    left: 25%;
+    width: 180px;
+    height: 180px;
+    border-radius: 200px;
+}
