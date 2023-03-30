@@ -245,3 +245,121 @@ img {
 .table-data-4 {
     background: rgba(17, 37, 212, 0.1);
 }
+
+.category-result {
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(48, 59, 90);
+}
+
+.category-total {
+    font-size: 18px;
+    font-weight: 800;
+    color: rgba(48, 59, 90, 0.5);
+}
+
+.button-holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    width: 100%;
+    height: 200px;
+}
+
+.button {
+    cursor: pointer;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    width: 80%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: rgb(48, 59, 90);
+}
+
+.button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 65%), hsl(241, 81%, 54%));
+}
+
+@media only screen and (max-width: 950px) {
+    .box{
+        width: 85%;
+    }
+
+    .circle-container {
+        align-items: center;
+        position: relative;
+        left: 5%;
+    }
+
+    .result-circle {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .box{
+        width: 85%;
+    }
+
+    .circle-container {
+        align-items: center;
+        position: relative;
+        left: -2%;
+    }
+
+    .result-circle {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box {
+        position: absolute;
+        top: 0;
+        flex-direction: column;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .circle-container {
+        align-items: center;
+        position: relative;
+        left: 3%;
+    }
+
+    .result-circle {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button-holder {
+        margin-top: -30px;
+    }
+
+    .left-box {
+        width: 100%;
+        height: auto;
+        border-radius: 0px 0px 25px 25px;
+    }
+
+    .right-box {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .summary-title {
+        font-weight: 700;
+        margin-left: 30px;
+    }
+}
