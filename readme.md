@@ -1,1 +1,1 @@
-* Project still under development
+Result page project for Frontend Mentor website challenge.
